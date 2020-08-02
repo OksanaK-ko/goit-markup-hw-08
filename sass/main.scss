@@ -1,0 +1,29 @@
+@import './utils/variables';
+@import './utils/normalize';
+@import './utils/breakpoints';
+@import './common/containers';
+@import './utils/placeholders';
+@import './components/main-page/body';
+@import './common/base';
+@import './utils/mixins';
+@import './components/main-page/logo';
+@import './components/main-page/page-header';
+@import './components/main-page/menu';
+@import './components/main-page/hero';
+@import './components/main-page/hero-button';
+@import './components/main-page/overlay';
+@import './components/main-page/features-section';
+@import './components/main-page/services-section';
+@import './components/main-page/team-section';
+@import './components/main-page/team-social-links';
+@import './components/main-page/client-section';
+@import './components/main-page/footer';
+@import './components/main-page/footer-social-links';
+@import './components/main-page/subscribe-form';
+@import './components/portfolio/page-nav';
+@import './components/portfolio/page-main';
+@import './components/portfolio/portfolio-cards';
+@import './components/main-page/modal-window';
+@import './components/main-page/check-box';
+
+

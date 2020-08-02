@@ -1,0 +1,41 @@
+.clients .content {
+        @include flex-wrap ();
+        margin: -15px;
+   }
+ .client {
+        width: calc((100% - 60px) / 2);
+        margin: 15px;
+        @media screen and (min-width:$tablet) {
+        width: calc((100% - 90px) / 3); 
+        } 
+        @media screen and (min-width:$desktop) {
+         width: calc((100% - 180px) / 6);
+        }
+     
+       &-link {
+         @include flex-center ();
+         max-width: 210px;
+         height: 90px;
+         border: 1px solid $link-color;
+         border-radius: 4px;
+         @media screen and (min-width:$desktop) {
+        max-width: 170px;    
+         }
+         .client:hover &, .client:focus-within & {
+            fill: $accent-color;
+            border: 1px solid $accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            transition: transform $duration $timing-function;
+        }
+    }
+    &-icon {
+      fill: $link-color;
+
+      .client:hover &, .client:focus-within & {
+        fill: $accent-color;
+        }
+    }
+
+  }
+   

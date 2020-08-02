@@ -1,0 +1,101 @@
+.overlay {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+         to right,
+         rgba(47, 48, 58, 0.8),
+         rgba(47, 48, 58, 0.8)
+       ),
+       url(../images/header-450@1x.jpg);
+    background-color: rgba(47, 48, 58, 0.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    @media screen and (min-device-pixel-ratio: 1),
+    screen and (min-resolution: 96dpi),
+    screen and (min-resolution: 1dppx) {
+    .overlay {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+       url('../images/header-450@1x.jpg');
+       background-color: rgba(47, 48, 58, 0.8);
+  }
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+       url('../images/header-450@2x.jpg');
+       background-color: rgba(47, 48, 58, 0.8);
+    }
+  }
+  @media screen and (min-width:$tablet) {
+  @media screen and (min-device-pixel-ratio: 1),
+  screen and (min-resolution: 96dpi),
+  screen and (min-resolution: 1dppx) {
+  .overlay {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+     url('../images/header-768@1x.jpg');
+     background-color: rgba(47, 48, 58, 0.8);
+}
+  }
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+.overlay {
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  ),
+   url('../images/header-768@2x.jpg');
+   background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+  }
+@media screen and (min-width:$desktop) {
+  @media screen and (min-device-pixel-ratio: 1),
+  screen and (min-resolution: 96dpi),
+  screen and (min-resolution: 1dppx) {
+  .overlay {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+     url('../images/header-1600@1x.jpg');
+     background-color: rgba(47, 48, 58, 0.8);
+}
+  }
+  
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+.overlay {
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  ),
+   url('../images/header-1600@2x.jpg');
+   background-color: rgba(47, 48, 58, 0.8);
+      }
+    }
+
+  }
+    
+
+

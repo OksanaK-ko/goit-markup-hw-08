@@ -1,0 +1,64 @@
+.example {
+    display: block;
+    text-decoration: none;
+    & .title {
+        color: $primary-text-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06rem;
+      }
+    &-type {
+        color: $secondary-text-color;
+        font-size: 16px;
+        line-height: 1.87;
+      }
+    &-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        transform: translateY(101%);
+        transition: transform $duration $timing-function;
+        color: $title-accent-color;
+        font-size: 18px;
+        line-height: 1.56;
+        margin: 0;
+        padding: 77px 24px;
+        background-color: rgba(33, 150, 243, 0.9);
+        @media screen and (min-width:$tablet) {
+            padding: 49px 24px;
+        }
+        @media screen and (min-width:$desktop) {
+            padding: 63px 24px;
+        }
+    }
+}
+   .portfolio-example {
+        position: relative;
+        overflow: hidden;  
+    }
+
+.example-text,.item-content {
+    .item:hover &, .item:focus-within & {
+        transform: translateY(0);
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        0px 1px 1px rgba(0, 0, 0, 0.12);  
+    }
+}
+
+.portfolio {
+    @include flex-wrap ();
+    margin: -15px;
+    & .item {
+  @media screen and (min-width:$tablet) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px; 
+     }
+     @media screen and (min-width:$desktop) {
+        width: calc((100% - 90px) / 3); 
+        } 
+    }
+}
+  

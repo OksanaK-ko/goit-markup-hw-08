@@ -1,0 +1,95 @@
+ .secondary-accent {
+     color: $title-accent-color;
+   }
+
+ .foot-nav {
+    @media screen and (min-width:$desktop) {
+     display: flex;
+     align-items: baseline;
+    }
+  }
+    .footer {
+     background-color: $footer-background-color;
+     & .address, & .link {
+         font-size: 14px;
+         line-height: 1.71; 
+
+     }
+     & .us {
+         color: $footer-accent-color; 
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 8px;
+       @media screen and (min-width:$desktop) { 
+        margin-bottom: 9px;
+        }
+     }
+     &-link {
+         display: flex;
+         justify-content: center;
+       }
+     & .social  {
+         display: block;
+         @media screen and (min-width:$tablet) {
+            padding-top: 65px;
+       }
+       @media screen and (min-width:$desktop) { 
+        margin-right: 94px;   
+       }
+       }
+    }
+
+   .foot {
+       &-contact .address {
+         color: $title-accent-color;
+         font-style: normal; 
+         @media screen and (min-width:$desktop) {
+          margin-bottom: 9px;  
+            } 
+        }
+       &-address {
+        @media screen and (max-width:767px) {
+           margin-bottom: 60px;
+           text-align: center;
+        }
+      }
+        & .address {
+            @media screen and (max-width:767px) {    
+            margin-bottom: 8px;
+            }
+        }
+        &-content {
+            @media screen and (min-width:$tablet) {
+            display:flex;
+            margin-bottom: 60px;
+            }
+        }
+        &-nav .logo {
+          padding-top: 60px;
+          text-align: center;
+          @media screen and (max-width:1190px) { 
+          margin-bottom: 20px;
+          }
+          @media screen and (min-width:$desktop) {
+          padding-bottom: 8px;  
+          margin-right: 0;
+          text-align: start;
+          }
+       }
+       &-contact {
+        @media screen and (min-width:$tablet) {
+            margin-right: 204px;
+            padding-left: 76px;
+            }
+            @media screen and (min-width:$desktop) { 
+                margin-right: 69px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 9px; 
+                padding-left: 0;
+             }
+       }
+   }
+
+ 
+

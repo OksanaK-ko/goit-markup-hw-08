@@ -1,0 +1,44 @@
+.services {      
+  @media screen and (max-width:1199px) {
+    display:none;
+  }
+  & .content {
+    @media screen and (min-width:$desktop) {  
+      @include flex-wrap ();
+        margin: -15px;
+    }
+  }
+    & .feature .content {
+      width: calc((100% - 90px) / 3); 
+      margin: 15px;
+    } 
+}
+.service-item {
+    position: relative;
+    &:not(:last-child) {
+    margin-right: 30px;
+  }
+ }
+
+ .feature  {
+     & .subtitle {
+        display: block;
+        text-align: center;
+        padding: 27px;
+        height: 70px;
+        color: $title-accent-color;
+        background-color: $background-accent-color;
+        text-decoration: none;
+        
+        &:hover, &:focus {
+            color: $secondary-text-color;
+            transition: transform $duration $timing-function; 
+        }
+ } 
+}
+.subtitle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }

@@ -1,0 +1,10 @@
+%link {
+    color: $accent-color;
+    transition: transform $duration $timing-function;
+  }
+  
+  %button {
+    color:$title-accent-color;
+    background-color: $accent-color;
+    border-radius: 4px;
+  }

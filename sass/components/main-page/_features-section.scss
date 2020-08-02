@@ -1,0 +1,54 @@
+ .feature {
+     & .title, & .subtitle {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
+   margin-top: 0;
+      @media screen and (max-width:767px) {
+         text-align: center;
+         }
+      }
+     & .text {
+         margin-top: 0;  
+         margin-bottom: 0px;
+         color: $secondary-text-color;
+         font-size: 14px;
+         line-height: 1.7;
+     }
+    & .item {
+      @media screen and (min-width:$tablet) {
+         width: calc((100% - 60px) / 2);
+         margin: 15px;
+      }
+      @media screen and (min-width:$desktop) {
+         width: calc((100% - 120px) / 4);
+         margin: 15px;
+         }
+      }
+
+     &-icon {
+      text-align: center;
+      padding: 25px 0;
+        height: 120px; 
+        background-color: #f5f4fa;
+        border-radius: 4px;
+        @media screen and (max-width:767px) {
+         max-width: 450px;
+          }
+     }
+ }
+
+   .features {
+      & .title {
+     padding-top: 30px;
+     padding-bottom: 10px;
+     margin-bottom: 0px;
+     }
+     .content {
+      @media screen and (min-width:$tablet) {
+      @include flex-wrap ();
+        margin: -15px;
+     }
+   }
+  }

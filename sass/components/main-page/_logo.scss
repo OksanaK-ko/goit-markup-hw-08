@@ -1,0 +1,29 @@
+ .logo {
+     display: block;
+     @media screen and (min-width: $tablet) {
+       }
+     @media screen and (min-width: $desktop) {
+     margin-right: 85px;
+     padding-top: 24px;
+     padding-bottom: 25px;
+     }
+   }
+  
+   .accent {
+     color: $accent-color;
+   }
+
+   .nav, .footer {
+     & .logo .link {
+          color: $primary-text-color;
+          font-family: $secondary-font;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.17;
+          text-decoration: none;
+      @media screen and (min-width:$desktop) {   
+        font-size: 28px;
+        line-height: 1.18;
+      }
+     }
+   } 

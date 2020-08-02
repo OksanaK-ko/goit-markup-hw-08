@@ -1,0 +1,28 @@
+ .section-hero {
+     text-align: center;
+     background-color: $footer-background-color;
+     margin-bottom: 60px;
+   
+     @media screen and (min-width:$desktop) {
+     margin-bottom: 94px;
+     }
+   }
+  
+   .hero {
+     padding-top: 118px;
+     margin-top: 0;
+     margin-bottom: 30px;
+  
+     color: $title-accent-color;
+     font-weight: 900;
+     font-size: 26px;
+     line-height: 1.6;
+     letter-spacing: 0.06rem;
+     text-transform: uppercase;
+    
+     @media screen and (min-width:$desktop) {
+         padding-top: 200px;
+         font-size: 44px;
+        line-height: 1.36;
+     }
+   }
