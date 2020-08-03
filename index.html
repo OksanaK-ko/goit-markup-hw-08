@@ -177,18 +177,43 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="feature list content">
             <li class="item">
-              <img 
-              srcset="
-              ./images/nick-270.jpg 270w,
-              ./images/nick-270@2x.jpg 540w,
-              ./images/nick-354.jpg 354w,
-              ./images/nick-354@2x.jpg 708w,
-              ./images/nick-450.jpg 450w
-              ./images/nick-450@2x.jpg 900w"
-                src="./images/nick-450.jpg"
-                alt="Николаев Кучеренко"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw "
-              />
+              <picture>
+                <source srcset="
+                ./images/nick-450.webp 450w,
+                ./images/nick-900.webp 900w
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+                <source srcset="
+                ./images/nick-270.webp 270w,
+                ./images/nick-540.webp 540w
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="
+                ./images/nick-354.webp 354w,
+                ./images/nick-708.webp 708w
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+                <source srcset=" 
+                ./images/nick-450.jpg 450w,
+                .images/nick-450@2x.jpg 900w"
+                 media="(max-width: 767px)"/>
+                <source srcset="
+                ./images/nick-270.jpg 270w,
+                .images/nick-270@2x.jpg 540w"  
+                media="(min-width: 1200px)" />
+                <source srcset="
+                ./images/nick-354.jpg 354w,
+                .images/nick-354@2x.jpg 708w" 
+                media="(min-width: 768px)" />
+                <img src="./images/nick-450.jpg" 
+                 alt="Николай Кучеренко" />
+                </picture>
                 <div class="team-content">
                 <h3 class="team-member">Николай Кучеренко</h3>
                 <p class="profession">Product Designer</p>
@@ -231,19 +256,44 @@
               </div>
             </li>
             <li class="item">
-              <img 
-              srcset="
-              ./images/olga-270.jpg 270w,
-              ./images/olga-270@2x.jpg 540w,
-              ./images/olga-354.jpg 354w,
-              ./images/olga-354@2x.jpg 708w,
-              ./images/olga-450.jpg 450w
-              ./images/olga-450@2x.jpg 900w"
-                src="./images/olga-450.jpg"
-                alt="Ольга Иванова"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw "
-              />
-              <div class="team-content">
+              <picture>
+                <source srcset="
+                ./images/olga-450.webp 450w,
+                ./images/olga-900.webp 900w
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+                <source srcset="
+                ./images/olga-270.webp 270w,
+                ./images/olga-540.webp 540w
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="
+                ./images/olga-354.webp 354w,
+                ./images/olga-708.webp 708w
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+                <source srcset=" 
+                ./images/olga-450.jpg 450w,
+                .images/olga-450@2x.jpg 900w"
+                 media="(max-width: 767px)"/>
+                <source srcset="
+                ./images/olga-270.jpg 270w,
+                .images/olga-270@2x.jpg 540w"  
+                media="(min-width: 1200px)" />
+                <source srcset="
+                ./images/olga-354.jpg 354w,
+                .images/olga-354@2x.jpg 708w" 
+                media="(min-width: 768px)" />
+                <img src="./images/olga-450.jpg" 
+                 alt="Ольга Иванова" />
+                </picture>
+                <div class="team-content">
                 <h3 class="team-member">Ольга Иванова</h3>
                 <p class="profession">Frontend Developer</p>
                 <ul class="list item link">
@@ -285,18 +335,43 @@
               </div>
             </li>
             <li class="item">
-              <img 
-              srcset="
-              ./images/andrey-270.jpg 270w,
-              ./images/andrey-270@2x.jpg 540w,
-              ./images/andrey-354.jpg 354w,
-              ./images/andrey-354@2x.jpg 708w,
-              ./images/andrey-450.jpg 450w
-              ./images/andrey-450@2x.jpg 900w"
-                src="./images/andrey-450.jpg"
-                alt="Андрей Шевченко"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw "
-              />
+              <picture>
+                <source srcset="
+                ./images/andrey-450@1x.webp 450w,
+                ./images/andrey-450@2x.webp 900w
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+                <source srcset="
+                ./images/andrey-270@1x.webp 270w,
+                ./images/andrey-270@2x.webp 540w
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="
+                ./images/andrey-354@1x.webp 354w,
+                ./images/andrey-354@2x.webp 708w
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+                <source srcset=" 
+                ./images/andrey-450.jpg 450w,
+                .images/andrey-450@2x.jpg 900w"
+                 media="(max-width: 767px)"/>
+                <source srcset="
+                ./images/andrey-270.jpg 270w,
+                .images/andrey-270@2x.jpg 540w"  
+                media="(min-width: 1200px)" />
+                <source srcset="
+                ./images/andrey-354.jpg 354w,
+                .images/andrey-354@2x.jpg 708w" 
+                media="(min-width: 768px)" />
+                <img src="./images/andrey-450.jpg" 
+                 alt="Андрей Шевченко" />
+                </picture>
               <div class="team-content">
                 <h3 class="team-member">Андрей Шевченко</h3>
                 <p class="profession">Marketing</p>
@@ -339,18 +414,43 @@
               </div>
             </li>
             <li class="item">
-              <img 
-              srcset="
-              ./images/ivan-270.jpg 270w,
-              ./images/ivan-270@2x.jpg 540w,
-              ./images/ivan-354.jpg 354w,
-              ./images/ivan-354@2x.jpg 708w,
-              ./images/ivan-450.jpg 450w
-              ./images/ivan-450@2x.jpg 900w"
-                src="./images/ivan-450.jpg"
-                alt="Иван Николаев"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw "
-              />
+              <picture>
+                <source srcset="
+                ./images/ivan-450@1x.webp 450w,
+                ./images/ivan-450@2x.webp 900w
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+                />
+                <source srcset="
+                ./images/ivan-270@1x.webp 270w,
+                ./images/ivan-270@2x.webp 540w
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="
+                ./images/ivan-354@1x.webp 354w,
+                ./images/ivan-354@2x.webp 708w
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+                <source srcset=" 
+                ./images/ivan-450.jpg 450w,
+                .images/ivan-450@2x.jpg 900w"
+                 media="(max-width: 767px)"/>
+                <source srcset="
+                ./images/ivan-270.jpg 270w,
+                .images/ivan-270@2x.jpg 540w"  
+                media="(min-width: 1200px)" />
+                <source srcset="
+                ./images/ivan-354.jpg 354w,
+                .images/ivan-354@2x.jpg 708w" 
+                media="(min-width: 768px)" />
+                <img src="./images/ivan-450.jpg" 
+                 alt="Иванова Николаев" />
+                </picture>
               <div class="team-content">
                 <h3 class="team-member">Иван Николаев</h3>
                 <p class="profession">UI Designer</p>

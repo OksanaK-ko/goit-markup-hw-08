@@ -890,6 +890,11 @@ img {
   background-color: #f5f4fa;
 }
 
+.team .item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .team .item {
     width: calc((100% - 60px) / 2);

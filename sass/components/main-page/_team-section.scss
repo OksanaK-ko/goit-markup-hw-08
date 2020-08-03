@@ -10,14 +10,15 @@
 .team {
   background-color: #f5f4fa;
   & .item {
-       @media screen and (min-width:$tablet) {
+      object-fit: cover;
+         @media screen and (min-width:$tablet) {
          width: calc((100% - 60px) / 2);
          margin: 15px;
-      }
+        }
       @media screen and (min-width:$desktop) {
          width: calc((100% - 120px) / 4);
          margin: 15px;
-         }
+          }
            &:not(:last-child) {
          @media screen and (max-width:767px) {
           margin-bottom: 15px;
